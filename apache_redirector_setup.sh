@@ -13,7 +13,7 @@ echo "Unsetting /etc/apache2/sites-available/000-default.conf as the current sit
 sudo a2dissite 000-default.conf
 
 echo "Enabling proxy/reverse mods"
-sudo a2enmod p rewrite deflate headers proxy proxy_ajp proxy_http proxy_balancer proxy_connect proxy_html
+sudo a2enmod rewrite deflate headers proxy proxy_ajp proxy_http proxy_balancer proxy_connect proxy_html
 
 echo "Disabling indexing"
 sudo a2dismod autoindex -f
